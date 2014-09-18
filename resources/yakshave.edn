@@ -1,0 +1,11 @@
+{:renderer "compojure"
+ :files [[".gitignore"  "gitignore"]
+         ["project.clj" "project_lein2.clj"]
+         ["README.md"   "README.md"]
+         ["src/{{path}}/handler.clj"       "handler.clj"]
+         ["test/{{path}}/test/handler.clj" "handler_test.clj"]
+         "resources/public"]
+ :data {:name [:identity]
+        :sanitized [:sanitize]
+        :path [:name-to-path]
+        :year [:year]}}
